@@ -19,23 +19,23 @@ import org.springframework.context.annotation.Configuration;
 // * ---------------------------------------------------
 // * 2024-08-28         jaejun
 // */
-//
-//
-//@Configuration
-//public class SwaggerConfig {
-//    @Bean
-//    public OpenAPI openAPI() {
-//        return new OpenAPI()
-//                .components(new Components())
-//                .info(apiInfo());
-//    }
-//
-//    private Info apiInfo() {
-//        return new Info()
-//                .title("CodeArena Swagger")
-//                .description("CodeArena 유저 및 인증 , ps, 알림에 관한 REST API")
-//                .version("1.0.0");
-//    }
-//}
-//
+
+
+@Configuration
+public class SwaggerConfig {
+    @Bean
+    public OpenAPI openAPI() {
+        return new OpenAPI()
+                .components(new Components())
+                .info(apiInfo());
+    }
+
+    private Info apiInfo() {
+        return new Info()
+                .title("CodeArena Swagger")
+                .description("CodeArena 유저 및 인증 , ps, 알림에 관한 REST API")
+                .version("1.0.0");
+    }
+}
+
 
